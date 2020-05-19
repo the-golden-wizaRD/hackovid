@@ -38,21 +38,20 @@ class Hackathons extends React.Component {
             </div>
           </div>
           <div className="backFace">
-            <button className="backFaceText">
-              <a href={value.website} target="_blank" rel="noopener noreferrer">{value.name}</a>
-            </button>
             <p className="backFaceText">Organised by <br></br>{value.organizer}</p>
-            <p className="backFaceText">{value.start}<br></br>to<br></br>{value.end}</p>
-            <button className="backFaceText">
-              <a href={value.website} target="_blank" rel="noopener noreferrer">Details</a>
-            </button>
-            <br></br>
-            <a href={value.fbLink} className="backFaceSocialIcons" target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-facebook-square" aria-hidden="true"></i>
-            </a> &nbsp;&nbsp;
-            <a href={value.github} className="backFaceSocialIcons" target="_blank" rel="noopener noreferrer">
-              <i class="fa fa-github-square" aria-hidden="true"></i>
-            </a> &nbsp;&nbsp;
+            <p className="backFaceText">{value.prize1st} &nbsp; &nbsp; {value.prize2nd} &nbsp; &nbsp; {value.prize3rd}</p>
+            <p className="backFaceText">{value.start} &nbsp; to &nbsp; {value.end}</p>
+            <p className="backFaceText">
+              <a className="backFaceLinks" href={value.website} target="_blank" rel="noopener noreferrer">Details</a>
+            </p>
+            <p>
+              <a href={value.fbLink} className="backFaceSocialIcons" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              </a> &nbsp;&nbsp;
+              <a href={value.github} className="backFaceSocialIcons" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-github-square" aria-hidden="true"></i>
+              </a> &nbsp;&nbsp;
+            </p>
           </div>
         </div>);
     });
